@@ -1,21 +1,52 @@
 #include <stdio.h>
 
-int main() {
-    int a = 10;
-    unsigned int b = 20;
-    float c = 10.5;
-    double d = 20.75;
-    char e = 'A';
+int main()
+{
+    int number;
+    unsigned int unsignedNumber;
+    float floatValue;
+    double doubleValue;
+    char character;
+    long int longNumber;
 
-    printf("Integer: %d\n", a);
-    printf("Unsigned Integer: %u\n", b);
-    printf("Float: %f\n", c);
-    printf("Double: %lf\n", d);
-    printf("Character: %c\n", e);
+    printf("Enter an integer: ");
+    scanf("%d", &number);
 
-    printf("Octal: %o\n", a);
-    printf("Hexadecimal: %x\n", a);
-    printf("Hexadecimal Uppercase: %X\n", a);
+    printf("Enter an unsigned integer: ");
+    scanf("%u", &unsignedNumber);
+
+    printf("Enter a float value: ");
+    scanf("%f", &floatValue);
+
+    printf("Enter a double value: ");
+    scanf("%lf", &doubleValue);
+
+    printf("Enter a character: ");
+    scanf(" %c", &character);
+
+    printf("Enter a long integer: ");
+    scanf("%ld", &longNumber);
+
+    printf("\n========================================\n");
+    printf("       DATA TYPE AND FORMAT SPECIFIERS\n");
+    printf("========================================\n");
+
+    printf("Integer (Decimal)        : %d\n", number);
+    printf("Integer (Octal)          : %o\n", number);
+    printf("Integer (Hex Lowercase)  : %x\n", number);
+    printf("Integer (Hex Uppercase)  : %X\n", number);
+
+    printf("Unsigned Integer         : %u\n", unsignedNumber);
+
+    printf("Float using %%f           : %f\n", floatValue);
+    printf("Float using %%e           : %e\n", floatValue);
+    printf("Float using %%g           : %g\n", floatValue);
+
+    printf("Double                   : %lf\n", doubleValue);
+    printf("Character                : %c\n", character);
+    printf("Long Integer             : %ld\n", longNumber);
+
+    printf("========================================\n");
 
     return 0;
 }
